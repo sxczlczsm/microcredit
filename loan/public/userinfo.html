@@ -1,0 +1,353 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>提交资料</title>
+    <link href="../css/public/basic.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/header.footer.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/pcbolt.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="zxcf_top_wper">
+		<div class="zxcf_top">
+			 <div class="zxcf_top_l">
+			    <img src="../image/public/zxcf_phone.png" alt=""></img>
+			    10086(工作时间9:00-17:30)
+			 </div>
+			 <div class="zxcf_top_r fr">
+			 	<a href="login.html" class="curspan">立即登录</a>
+			 	<span>|</span>
+			 	<a href="register.html">免费注册</a>
+			 </div>
+		</div>
+	</div>
+	<div class="zxcf_nav_wper">
+		<div class="zxcf_nav clearfix px1000">
+			 <div class="zxcf_nav_l fl"><img src="../image/logo_header.png" alt=""></img></div>
+			 <div class="zxcf_nav_r fr">
+			 	<img src="../image/public/lg_pic01.png" alt=""></img>
+			 	<span> <a href="#">返回首页</a></span>
+			 </div>
+		</div>
+	</div>
+    <div class="banner"></div>
+	<div class="main">
+	    <div class="stepBox step1">
+	        <div class="stepnames">
+	            <p class="stepname1">
+	              	  提交资料
+	            </p>
+	            <p class="stepname2">
+	               	 审核资料
+	            </p>
+	            <p class="stepname3">
+	              	签署协议
+	            </p>
+	        </div>
+	        <div class="stepmap"></div>
+	    </div>
+	    <form method="post" id="firstborrow" action="/AutoFlow/UserInfo" class="">
+	        <div class="section">
+	            <h2 class="title">基本信息
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">真实姓名：
+	                </span>
+	                	<input type="text" class="textbox" name="RealName" value="许哲瀚" maxlength="30"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">身份证号：
+	                </span>
+	                    <input type="text" class="textbox" name="IdNumber" maxlength="18" value ="361102197708148813"/>
+	            </div>
+	
+	            <div class="formOption">
+	                <span class="formname">手机号：
+	                </span>
+	                    <input type="text" class="textbox" name="MobilePhone" maxlength="18" value="15023021462"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">QQ号：
+	                </span>
+	                <input type="text" class="textbox" value="609974515" maxlength="15" name="QQ"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">常用邮箱：
+	                </span>
+	                <input type="text" class="textbox" value="sxczlczsm@163.com" name="email" id="email"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">学历：
+	                </span>
+	                <select class="listbox" name="EducationId">
+	                    <option value="">请选择</option>
+	                        <option value="1" >
+	                            研究生及以上
+	                        </option>
+	                        <option value="2" selected=&#39;selected&#39;>
+	                            本科
+	                        </option>
+	                        <option value="3" >
+	                            大专
+	                        </option>
+	                        <option value="4" >
+	                            高中
+	                        </option>
+	                        <option value="5" >
+	                            中专
+	                        </option>
+	                        <option value="6" >
+	                            初中及以下
+	                        </option>
+	                </select>
+	                <span class="remind">（若为学生，请选择在读学历）</span>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">婚姻状况：
+	                </span>
+	                <select class="listbox" name="MarriageStatusId">
+	                    <option value="">请选择</option>
+	                    <option value="1" selected=&#39;selected&#39;>未婚
+	                    </option>
+	                    <option value="2" >已婚
+	                    </option>
+	                    <option value="4" >离异
+	                    </option>
+	                </select>
+	            </div>
+	            <div class="formOption bank-id">
+	                <span class="formname">信用卡号：
+	                </span>
+	                <input type="text" class="textbox" maxlength="16" name="CreditCode"/>
+	                <span class="remind">（若无可不填，卡号为16位数字）</span>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">就业状态：
+	                </span>
+	                <label class="label">
+	                    <input type="radio" name="UserType" value="1" checked=checked/>工薪族
+	                </label>
+	                <label class="label">
+	                    <input type="radio" name="UserType" value="2" />私营业主
+	                </label>
+	                <label class="label">
+	                    <input type="radio" name="UserType" value="4" />学生
+	                </label>
+	                <label class="label">
+	                    <input type="radio" name="UserType" value="6" />其他
+	                </label>
+	            </div>
+	        </div>
+	        <div class="section hide" usertype="UserType6">
+	            <h2 class="title">就业情况
+	    			<span class="airBubble">
+	                    <img src="../image/public/question.png"></img>
+	                    <div class="tag">
+	                        <div class="arrow"><em></em><span></span></div>
+	                        	无确定的就业状态，会转人工审核，可能会影响放款速度
+	                    </div>
+	                </span>
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">还款来源：
+	                </span>
+	                <input name="IncomeFromForOther" maxlength="40" type="text" class="textbox"/>
+	            </div>
+	        </div>
+	        <div class="section hide" usertype="UserType4">
+	            <h2 class="title">学生情况
+	            </h2>
+	            <div class="formOption hide">
+	                <span class="formname w100">学历：
+	                </span>
+	                <select class="listbox" name="studentxueli"  data-type="2">
+	                        <option value="">请选择</option>
+	                        <option value="专科">专科</option>
+	                        <option value="本科">本科</option>
+	                        <option value="硕士">硕士</option>
+	                        <option value="博士">博士</option>
+	                </select>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname w100">学制：
+	                </span>
+	                <select class="listbox" name="studentxuezhi"  data-type="2">
+	                        <option value="">请选择</option>
+	                        <option value="1">普通</option>
+	                        <option value="2">研究生</option>
+	                        <option value="5">成人</option>
+	                        <option value="6">自考</option>
+	                        <option value="7">网络教育</option>
+	                        <option value="8">开放教育</option>
+	                </select>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname w100">在校学校名称：
+	                </span>
+	                <select class="listbox w114" name="studentshengfen" id="studentshengfen"  data-type="2">
+	                    <option value="">选择省</option>
+	                        <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+	                        <option value="云南省">云南省</option>
+	                        <option value="河南省">河南省</option>
+	                        <option value="贵州省">贵州省</option>
+	                        <option value="海南省">海南省</option>
+	                        <option value="黑龙江省">黑龙江省</option>
+	                        <option value="江西省">江西省</option>
+	                        <option value="内蒙古自治区">内蒙古自治区</option>
+	                        <option value="四川省">四川省</option>
+	                        <option value="湖南省">湖南省</option>
+	                        <option value="安徽省">安徽省</option>
+	                        <option value="天津市">天津市</option>
+	                        <option value="陕西省">陕西省</option>
+	                        <option value="北京市">北京市</option>
+	                        <option value="山东省">山东省</option>
+	                        <option value="湖北省">湖北省</option>
+	                        <option value="吉林省">吉林省</option>
+	                        <option value="上海市">上海市</option>
+	                        <option value="江苏省">江苏省</option>
+	                        <option value="西藏自治区">西藏自治区</option>
+	                        <option value="辽宁省">辽宁省</option>
+	                        <option value="山西省">山西省</option>
+	                        <option value="河北省">河北省</option>
+	                        <option value="甘肃省">甘肃省</option>
+	                        <option value="浙江省">浙江省</option>
+	                        <option value="重庆市">重庆市</option>
+	                        <option value="福建省">福建省</option>
+	                        <option value="广西壮族自治区">广西壮族自治区</option>
+	                        <option value="青海省">青海省</option>
+	                        <option value="广东省">广东省</option>
+	                        <option value="宁夏回族自治区">宁夏回族自治区</option>
+	                </select>
+	                <input name="studentschoolname" id="studentschoolname" maxlength="40" type="text" class="textbox"  placeholder="学校全名"/>
+	            </div>
+	        </div>
+	        <div class="section hide" usertype="UserType2">
+	            <h2 class="title">公司情况
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">公司全称：
+	                </span>
+	                <input name="CompanyNameForCompanyOwner" maxlength="30" type="text" class="textbox"/>
+	                <span class="remind">（在工商局注册时填写的公司全称）</span>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">公司电话：
+	                </span>
+	                <input name="CompanyPhoneForCompanyOwner" maxlength="20" type="text" class="textbox"/>
+	            </div>
+	        </div>
+	        <div class="section " usertype="UserType1">
+	            <h2 class="title">工作情况
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">单位名称：
+	                </span>
+	                <input name="CompanyNameForWageEarner" maxlength="20" type="text" class="textbox" value="盛大游戏"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">单位固话：
+	                </span>
+	                <input name="CompanyPhoneForWageEarner" type="text" class="textbox" maxlength="15" value="021-50504740"/>
+	            </div>
+	        </div>
+	        <div class="section">
+	            <h2 class="title">联系人1
+	    			<span class="airBubble">
+	                    <img src="../image/public/question.png"></img>
+	                    <div class="tag">
+	                        <div class="arrow"><em></em><span></span></div>
+	                        	无担保责任。请提供与您有通话的联系人，提高信息完整度，加快放款速度
+	                    </div>
+	                </span>
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">与您关系：
+	                </span>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="1" />配偶
+	                    </label>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="3" checked=&#39;checked&#39;/>父母
+	                    </label>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="4" />兄弟姐妹
+	                    </label>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="2" />子女
+	                    </label>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="7" />其他亲戚
+	                    </label>
+	                    <label class="label">
+	                        <input name="RelationshipId" type="radio" value="6" />同事
+	                    </label>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">姓名：
+	                </span>
+	                <input id="secondRealName" name="RelationshipRealName" type="text" class="textbox"value="张三天"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">手机：
+	                </span>
+	                <input id="secondPhone" maxlength="11" name="RelationshipPhone" type="text" class="textbox" value="15514642324"/>
+	            </div>
+	        </div>
+	        <div class="section">
+	            <h2 class="title">联系人2
+	    			<span class="airBubble">
+	                    <img src="../image/public/question.png"></img>
+	                    <div class="tag">
+	                        <div class="arrow"><em></em><span></span></div>
+	                        	无担保责任。请提供与您有通话的联系人，提高信息完整度，加快放款速度
+	                    </div>
+	                </span>
+	            </h2>
+	            <div class="formOption">
+	                <span class="formname">与您关系：
+	                </span>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="1" />配偶
+	                    </label>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="3" />父母
+	                    </label>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="4" />兄弟姐妹
+	                    </label>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="2" />子女
+	                    </label>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="7" />其他亲戚
+	                    </label>
+	                    <label class="label">
+	                        <input name="ThirdRelationshipId" type="radio" value="6" checked=&#39;checked&#39;/>同事
+	                    </label>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">姓名：
+	                </span>
+	                <input id="ThirdRelationshipRealName" name="ThirdRelationshipRealName" type="text" class="textbox"value="刘晨哲"/>
+	            </div>
+	            <div class="formOption">
+	                <span class="formname">手机：
+	                </span>
+	                <input id="ThirdRelationshipPhone" maxlength="11" name="ThirdRelationshipPhone" type="text" class="textbox" value="15021464475"/>
+	            </div>
+	        </div>
+	        <a href="javascript:;" id="submitDateBtn" class="submitDateBtn">提交资料</a>
+	    </form>
+	</div>
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <p>	绿地金融投资控股集团有限公司 ? 版权所有
+			Copyright 2016 Greenland Financial Holdings Group All rights reserved</p>
+        </div>
+    </div>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

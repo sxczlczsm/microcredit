@@ -1,0 +1,276 @@
+
+.main {
+	width: 1000px;
+	margin: 0px auto auto;
+}
+
+.registerForm {
+	width: 466px;
+	float: right;
+	display: inline;
+	border-left: 1px #ddd solid;
+	padding-left: 50px;
+}
+
+.registerForm .registerAims {
+	width: 400px;
+	height: 54px;
+	font-size: 0;
+	margin-bottom: 28px
+}
+
+.registerForm .registerAims li {
+	width: 198px;
+	height: 54px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top
+}
+
+.registerForm .registerAims li a {
+	display: block;
+	width: 198px;
+	height: 46px;
+	font: 16px/46px "Microsoft Yahei";
+	color: #39a1ea;
+	border: 1px #39a1ea solid;
+	text-align: center;
+	background: #fff
+}
+
+.registerForm .registerAims li.borrower a {
+	border-right-color: #fff
+}
+
+.registerForm .registerAims li.lender a {
+	border-left-color: #fff
+}
+
+.registerForm .registerAims li.current {
+	background: url(../../image/public/registeraims_arrow.png) center bottom
+		no-repeat
+}
+
+.registerForm .registerAims li.current a {
+	color: #fff;
+	background: #39a1ea;
+	border-color: #39a1ea
+}
+
+.formBox .formOption {
+	min-height: 77px
+}
+.formBox .formOption span.name{
+	display: inline-block;
+	width: 70px;
+	height: 44px;
+	line-height: 44px;
+}
+
+.formBox .formOption.h50 {
+	min-height: 50px
+}
+
+.formBox .formOption .textbox {
+	/*height: 44px;*/
+	/*position: relative;*/
+	/*float: left;*/
+	/*display: inline*/
+
+	height: 44px;
+	position: relative;
+	display: inline-block;
+}
+
+.formBox .formOption .textbox .name {
+	position: absolute;
+	height: 44px;
+	width: 77px;
+	padding-left: 19px;
+	left: 0;
+	top: 0;
+	font: 14px/44px "Microsoft Yahei";
+	color: #666
+}
+
+.formBox .formOption .textbox input {
+	padding: 0 2px 0 15px; //96px;
+	border: 0;
+	height: 44px;
+	font: 14px/44px "Microsoft Yahei";
+	color: #666
+}
+
+.formBox .formOption .textbox.style1 {
+	width: 360px;
+}
+
+.formBox .formOption .textbox.style1 input {
+	width: 302px;
+	/*background: url(../../image/public/icon.png) left 0 no-repeat*/
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.formBox .formOption .textbox.style1 input.error {
+	background-position: left -74px
+}
+
+.formBox .formOption .textbox.style2 {
+	width: 250px
+}
+
+.formBox .formOption .textbox.style2 input {
+	width: 152px;
+	/*background: url(../../image/public/icon.png) left -148px no-repeat*/
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.formBox .formOption .textbox.style2 input.error {
+	background-position: left -222px
+}
+
+.formBox .formOption .errorMessage {
+	clear: both;
+	display: none;
+	padding-left: 23px;
+	height: 32px;
+	font: 12px/32px "SimSun";
+	color: #db0101;
+	background: url(../../image/public/error.png) left center no-repeat
+}
+
+.formBox .formOption .imgbox {
+	/*display: block;*/
+	/*margin: 0 0 0 16px;*/
+	/*width: 134px;*/
+	/*height: 44px;*/
+	/*float: left;*/
+	/*display: inline;*/
+	/*background: #ededed;*/
+	/*cursor: pointer*/
+
+	display: block; */
+	width: 134px;
+	height: 44px;
+	display: inline-block;
+	background: #ededed;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left: -45px;
+}
+
+.formBox .formOption .btnbox {
+	/*display: block;*/
+	/*margin: 0 0 0 16px;*/
+	/*border: 0;*/
+	/*padding: 0;*/
+	/*width: 134px;*/
+	/*height: 44px;*/
+	/*float: left;*/
+	/*display: inline;*/
+	/*background: url(../../image/public/icon.png) left -296px no-repeat;*/
+	/*cursor: pointer;*/
+	/*font: 14px/44px "Microsoft Yahei";*/
+	/*color: #0087e6;*/
+	/*text-align: center*/
+
+	display: block;
+	border: 0;
+	padding: 0;
+	width: 134px;
+	height: 44px;
+	display: inline-block;
+	background: url(../../image/public/icon.png) left -296px no-repeat;
+	cursor: pointer;
+	font: 14px/44px "Microsoft Yahei";
+	color: #0087e6;
+	text-align: center;
+	margin-left: -70px;
+}
+
+.formBox .formOption .btnbox.disabled, .formBox .formOption .btnbox:disabled
+	{
+	background-position: left -370px;
+	color: #707070;
+	cursor: default
+}
+
+.formBox .formOption .message {
+	clear: both;
+	height: 26px;
+	font: 12px/26px "SimSun";
+	color: #666;
+	display: none
+}
+
+.formBox .formOption .message a {
+	font: 12px/26px "SimSun";
+	color: #5eaeed
+}
+
+.formBox .treaty {
+	height: 18px;
+	font: 14px/18px "Microsoft Yahei";
+	color: #666
+}
+
+.formBox .treaty input {
+	position: relative;
+	top: 2px;
+	margin: 0 5px 0 0
+}
+
+.formBox .treaty a {
+	font: 14px/18px "Microsoft Yahei";
+	color: #39a1ea
+}
+
+.formBox .formbtn {
+	display: block;
+	width: 300px;
+	height: 50px;
+	font: 18px/50px "Microsoft Yahei";
+	color: #fff;
+	text-align: center;
+	background: url(../../image/public/icon.png) left -444px no-repeat;
+	cursor: pointer
+}
+
+.formBox .formbtn.disabled {
+	background-position: left -518px;
+	color: #707070;
+	cursor: default
+}
+
+.formBox .joint {
+	font: 14px/30px 'Microsoft Yahei';
+	color: #999;
+	padding-top: 14px
+}
+
+.formBox .joint i {
+	display: inline-block;
+	height: 30px;
+	background: url(../../image/public/icos.gif) no-repeat;
+	text-indent: -999em;
+	cursor: pointer
+}
+
+.formBox .joint i.qq {
+	width: 13px;
+	background-position: 0 7px
+}
+
+.formBox .joint i.sina {
+	width: 17px;
+	background-position: -26px 8px
+}
+
+.formBox .joint i.rr {
+	width: 20px;
+	background-position: 100% 9px
+}
+

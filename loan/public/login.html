@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>登录</title>
+    <link href="../css/public/basic.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/header.footer.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/login.box.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="zxcf_top_wper">
+		<div class="zxcf_top">
+			 <div class="zxcf_top_l">
+			    <img src="../image/public/zxcf_phone.png" alt=""></img>
+			    10086(工作时间9:00-17:30)
+			 </div>
+			 <div class="zxcf_top_r fr">
+			 	<a href="login.html" class="curspan">立即登录</a>
+			 	<span>|</span>
+			 	<a href="register.html">免费注册</a>
+			 </div>
+		</div>
+	</div>
+	<div class="zxcf_nav_wper">
+		<div class="zxcf_nav clearfix px1000">
+			 <div class="zxcf_nav_l fl"><img src="../image/logo_header.png" alt=""></img></div>
+			 <div class="zxcf_nav_r fr">
+			 	<img src="../image/public/lg_pic01.png" alt=""></img>
+			 	<span> <a href="#">返回首页</a></span>
+			 </div>
+		</div>
+	</div>
+	<div class="login_con_wper">
+		<div class="login_con px1000 ">
+			<div class="lg_section clearfix">
+				<div class="lg_section_l fl">
+					<img src="../image/public/lg_bg02.png">
+				</div>
+				<!-- end l -->
+				<div class="lg_section_r fl">
+					<h2 class="lg_sec_tit clearfix">
+						<span class="fl">登录账号</span>
+						<!--<em class="fr">没有帐号，<a href="register.html">立即注册</a></em>-->
+					</h2>
+					<div class="innerLoginBox clearfix">
+						<form action="/" method="post">
+							<div id="wraploginErrorMessage" class="wraploginErrorMessage">
+							</div>
+							<ul class="login_nav">
+								<li class="clearfix"><input type="text" name="UserName"
+									id="UserName" class="name" placeholder="手机/邮箱/用户名"
+									jumptarget="Password" jumpflag="false" tabindex="1" dta="name" />
+								</li>
+								<li class="clearfix" id="liPwd"><input type="password"
+									name="Password" id="Password" class="pass" autocomplete="off"
+									placeholder="密码" jumptarget="login_btn" jumpflag="true"
+									tabindex="2" />
+                                    <a class="pass">忘记密码</a>
+                                </li>
+
+								<li>
+                                    <input type="button" id="login_btn"  class="lgn login_btn" value="立 即 登 录" tabindex="4" />
+                                    <a class="pass">立即注册</a>
+                                </li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+        <div class="footer_footerBottom">
+            <p>	绿地金融投资控股集团有限公司 ? 版权所有
+			Copyright 2016 Greenland Financial Holdings Group All rights reserved</p>
+        </div>
+    </div>
+<!-- footer end -->
+</body>
+</html>

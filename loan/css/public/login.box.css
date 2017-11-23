@@ -1,0 +1,79 @@
+.innerLoginBox {
+	padding-top: 30px;
+}
+
+.innerLoginBox li {
+    position: relative;
+    margin-bottom: 20px;
+    width: 298px;
+    font-size: 0;
+}
+
+.innerLoginBox li * {
+	font-size: 14px
+}
+
+.innerLoginBox li input.name {
+	background-position: 0 0;
+}
+
+.innerLoginBox li input {
+	background: rgba(0, 0, 0, 0) url("../../image/public/imgico.gif") no-repeat scroll 0 0;
+	border: 0 none;
+	color: #999;
+	font: 14px/28px "Microsoft Yahei";
+	height: 28px;
+	padding: 8px 0 8px 60px;
+	width: 240px;
+}
+.innerLoginBox li input.pass{
+    background-position: 0 -64px;
+}
+
+.innerLoginBox li * {
+	font-size: 14px;
+}
+
+.login_btn.disabled {
+	cursor: default;
+	background-image: none;
+	background-color: #05c;
+	opacity: .65;
+	filter: alpha(opacity = 65);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none
+}
+
+.innerLoginBox li input.lgn {
+	width: 300px;
+	height: 50px;
+	padding: 0;
+	background-position: 0 -192px;
+	font: 18px/44px 'Microsoft Yahei';
+	color: #fff;
+	text-align: center;
+	cursor: pointer
+}
+
+.innerLoginBox li input.lgn:hover {
+	background-position: 0 -262px
+}
+.innerLoginBox li input#login_btn{
+    margin-top: 15px;
+}
+
+.innerLoginBox li a.pass{
+    position: absolute;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    padding-top: 10px;
+    color: #1b66c7;
+    font-size: 12px;
+}
+.innerLoginBox li a.pass:hover{
+    text-decoration: underline;
+    color: #2e7fdb;
+}

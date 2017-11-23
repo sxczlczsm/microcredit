@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>注册</title>
+    <link href="../css/public/basic.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/ac_register_new.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public/header.footer.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="zxcf_top_wper">
+		<div class="zxcf_top">
+			 <div class="zxcf_top_l">
+			    <img src="../image/public/zxcf_phone.png" alt=""></img>
+			    10086(工作时间9:00-17:30)
+			 </div>
+			 <div class="zxcf_top_r fr">
+			 	<a href="login.html" class="curspan">立即登录</a>
+			 	<span>|</span>
+			 	<a href="register.html">免费注册</a>
+			 </div>
+		</div>
+	</div>
+	<div class="zxcf_nav_wper">
+		<div class="zxcf_nav clearfix px1000">
+			 <div class="zxcf_nav_l fl"><img src="../image/logo_header.png" alt=""></img></div>
+			 <div class="zxcf_nav_r fr">
+			 	<img src="../image/public/lg_pic01.png" alt=""></img>
+			 	<span> <a href="#">返回首页</a></span>
+			 </div>
+		</div>
+	</div>
+	<div class="login_con_wper">
+	    <div class="main clearfix">
+	        <div class="registerForm">
+	            <form action="/User/Register" method="post" id="mobilereg">
+	                <ul class="registerAims">
+	                    <li class="borrower current">
+	                        <a href="javascript:;" >个人借款</a>
+	                    </li>
+	                    <li class="lender">
+	                        <a href="javascript:;" >企业借款</a>
+	                    </li>
+	                </ul>
+	                <input type="hidden" name="Redirect" id="Redirect" value="" />
+	                <input type="hidden" name="RegisterValidateType" id="regValidateType" value="" />
+	                <div class="formBox">
+
+	                    <div class="formOption clearfix">
+							<span class="name">手机/邮箱</span>
+	                        <div class="textbox style1">
+	                            <input type="text" name="Account" id="Account" placeholder="请输入常用手机号/邮箱" />
+	                        </div>
+	                        <p class="errorMessage"></p>
+	                    </div>
+	                    <div class="formOption clearfix">
+							<span class="name">设置密码</span>
+	                        <div class="textbox style1">
+	                            <input type="password" name="Password" id="Password" maxlength="16" placeholder="请输入6-16位字母和数字" />
+	                        </div>
+	                        <p class="errorMessage"></p>
+	                    </div>
+	                    <div class="formOption clearfix">
+							<span class="name">图片验证码</span>
+	                        <div class="textbox style2">
+
+	                            <input type="text" id="imgvefyData" placeholder="请输入图片验证码" />
+	                        </div>
+	                        <img id="imgCode" onclick="getImgValidateCode()" class="imgbox" alt="验证码" title="看不清？点击换一张" src="../image/public/67931d653c7a4936a110872222ec9214.gif" />
+	                        <p class="errorMessage"></p>
+	                    </div>
+	                    <div class="formOption clearfix">
+							<span class="name">验证码</span>
+	                        <div class="textbox style2">
+
+	                            <input type="text" name="validatecode" id="validatecode" placeholder="请输入验证码" />
+	                        </div>
+	                        <input class="btnbox" type="button" id="getvefydata" value="发送验证码" />
+	                        <p class="message">无法收到短信验证码?<a href="javascript:;" id="getvoicecode">您尝试获取语音验证码</a></p>
+	                        <p class="errorMessage"></p>
+	                    </div>
+	                    <div class="formOption clearfix">
+	                        <div class="treaty">
+	                            <input type="checkbox" id="agree" name="agree" value="1" checked="checked" class="check" />我同意
+	                            <a href="/Help/Terms" target="_blank">《服务协议》</a>和
+	                            <a class="policy1" href="/Help/Borrower_Policy" style="display:initial" target="_blank">《借款人注册协议》</a>
+	                            <a class="policy2" href="/Help/Lender_Policy" style="display:none" target="_blank">《借出人注册协议》</a>
+	                        </div>
+	                        <p class="errorMessage"></p>
+	                    </div>
+	                    <a href="javascript:;" class="formbtn">
+	                      	  注 册
+	                    </a>
+	                </div>
+	            </form>
+	        </div>
+	    </div>
+    </div>
+    <div class="fill_content"></div>
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <p>	绿地金融投资控股集团有限公司 ? 版权所有
+			Copyright 2016 Greenland Financial Holdings Group All rights reserved</p>
+        </div>
+    </div>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     $(function(){
+    	 $('.borrower').click(function(){
+    		 $('.borrower').addClass('current');
+    		 $('.lender').removeClass('current');
+    	 });
+    	 $('.lender').click(function(){
+    		 $('.lender').addClass('current');
+    		 $('.borrower').removeClass('current');
+    	 });
+     });
+     </script>
+</body>
+</html>

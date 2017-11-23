@@ -1,0 +1,15 @@
+﻿.my-f-right{border:1px #e0e0e0 solid;border-radius: 5px 5px 0 0;}
+.add-bank-card h3{background: #F8F8F8;font-size: 18px;color: #666;height: 48px;line-height: 48px;text-indent: 25px;font-weight: normal;border-radius: 5px 5px 0 0;}
+.add-bank-card-form{padding-left: 120px;padding-top: 40px;padding-bottom: 15px;}
+.add-bank-card-form li{margin-bottom: 20px;}
+.add-bank-card-form li label,.add-bank-card-form li .text{float: left;width: 135px;padding-right: 15px;}
+.add-bank-card-form li label{height: 32px;line-height: 32px;color: #333;text-align: right;}
+.add-bank-card-form li em{height: 32px;line-height: 32px;color: #333;text-align: right;}
+.add-bank-card-form li .text{height: 30px;line-height: 30px;border-radius:5px;color: #333;width: 246px;border: solid 1px #cccccc;padding:0 4px;width: 227px;}
+.add-bank-card-form li .btn{margin:30px 0 0 150px;height: 50px;padding:0px;border:0px;width: 237px;background: #39a1ea;color: #fff;font:18px/50px "Microsoft YaHei";border-radius: 4px;}
+.add-bank-card-form li .btn:disabled{background: #c0c0c0;}
+.add-bank-card-form li .btn:hover{background: #3696d9;}
+.bank-id{position: relative;}
+.bank-id-tips{width: 235px;height: 37px;line-height: 37px;background: #FFF9EB;border: 1px solid #FED19A;color: #fe8e01;font-size: 18px;position: absolute;left: 150px;top: -40px;text-indent: 5px;}
+.errorMsg{display: none;color: #f00;float: left;margin-left: 5px;height: 28px;line-height: 28px;}
+.add-bank-card-form li.m0{margin:0px;}
